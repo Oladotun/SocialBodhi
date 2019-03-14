@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import {
   ImageBackground,
-  Text,TouchableOpacity,StyleSheet
+  Text,TouchableOpacity,StyleSheet,View
 } from 'react-native';
 
+import { LoginButton, AccessToken } from 'react-native-fbsdk';
 const remote = 'HomeBackground.png';
 
 export default class Login extends Component {
@@ -35,12 +36,26 @@ export default class Login extends Component {
           {text}
       </Text>
 
-      <TouchableOpacity
-                style={styles.loginScreenButton}
-                onPress= '#'
-                underlayColor='#3b5998'>
-                <Text style={styles.loginText}>Login with Facebook</Text>
-       </TouchableOpacity>
+       <View>
+        <LoginButton
+         style = {styles.loginScreenButton}
+          onLoginFinished={
+            (error, result) => {
+              if (error) {
+                console.log("login has error: " + result.error);
+              } else if (result.isCancelled) {
+                console.log("login is cancelled.");
+              } else {
+                AccessToken.getCurrentAccessToken().then(
+                  (data) => {
+                    console.log(data.accessToken.toString())
+                  }
+                )
+              }
+            }
+          }
+          onLogoutFinished={() => console.log("logout.")}/>
+      </View>
 
        </ImageBackground>
 
@@ -53,15 +68,15 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
   loginScreenButton:{
-    marginRight:40,
-    marginLeft:40,
-   marginTop:10,
+    
     paddingTop:10,
     paddingBottom:10,
     backgroundColor:'#3b5998',
-    borderRadius:10,
     borderWidth: 1,
-    borderColor: '#fff'
+    borderColor: '#fff',
+    width: 195,
+    height: 50,
+    alignSelf: 'center'
   },
   loginText:{
       color:'#fff',
