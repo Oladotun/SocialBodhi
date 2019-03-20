@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import Login from './Login';
+import Navigator from './Navigator';
 
 const instructions = Platform.select({
   ios: 'Hello World\n' + 'Cmd+D or shake for dev menu',
@@ -20,7 +20,7 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    return ( <Login/>    );
+    return ( <Navigator/>    );
   }
 }
 
