@@ -8,6 +8,10 @@ import { LoginButton, AccessToken } from 'react-native-fbsdk';
 const remote = 'HomeBackground.png';
 
 export default class Login extends Component {
+
+  static navigationOptions = {
+        header: null
+    }
   render() {
     const resizeMode = 'center';
     const text = 'SocialBodhi\nBetterDecisions';

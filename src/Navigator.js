@@ -62,14 +62,14 @@ HomeTab.navigationOptions = ({ navigation }) => {
   };
 };
 
+
+
 const LoadNav = createStackNavigator({
   Loading: {screen: Loading},
   HomeTab: {screen: HomeTab},
   Login: { screen: Login },
 
-},
-{ headerMode: 'screen' });
-
+});
 
 
 

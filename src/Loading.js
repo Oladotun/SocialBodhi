@@ -34,6 +34,10 @@ export default class Loading extends Component {
     })
     .catch(error => {
       console.log(error)
+      this.setState({
+        accessToken: null,
+        loading:false
+      });
     });
   }
 
