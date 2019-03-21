@@ -3,7 +3,7 @@ import {
   ImageBackground,
   Text,StyleSheet
 } from 'react-native';
-import {AccessToken } from 'react-native-fbsdk';
+
 // import Home from './Home.js';
 // import Login from './Login.js';
 const remote = 'HomeBackground.png';
@@ -17,28 +17,28 @@ export default class Loading extends Component {
     super(props)
 
     this.state = {
-      accessToken: null,
-      loading: true
+      accessToken: true,
+      loading: false
     };
   }
 
   
 
   componentDidMount() {
-    AccessToken.getCurrentAccessToken()
-    .then((data) => {
-      this.setState({
-        accessToken: data.accessToken,
-        loading:false
-      });
-    })
-    .catch(error => {
-      console.log(error)
-      this.setState({
-        accessToken: null,
-        loading:false
-      });
-    });
+    // AccessToken.getCurrentAccessToken()
+    // .then((data) => {
+    //   this.setState({
+    //     accessToken: data.accessToken,
+    //     loading:false
+    //   });
+    // })
+    // .catch(error => {
+    //   console.log(error)
+    //   this.setState({
+    //     accessToken: null,
+    //     loading:false
+    //   });
+    // });
   }
 
 
