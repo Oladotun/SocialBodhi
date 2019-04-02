@@ -5,6 +5,8 @@ import {
 } from 'react-native';
 
 // import { LoginButton, AccessToken } from 'react-native-fbsdk';
+import firebase from 'react-native-firebase'
+import { GoogleSignin, statusCodes, GoogleSigninButton } from 'react-native-google-signin';
 const remote = 'HomeBackground.png';
 
 export default class Login extends Component {
@@ -12,6 +14,27 @@ export default class Login extends Component {
   static navigationOptions = {
         header: null
     }
+
+
+
+googleLogin= async() =>{
+  try {
+    // add any configuration settings here:
+    await GoogleSignin.configure();
+
+    const data = await GoogleSignin.signIn();
+
+    // create a new firebase credential with the token
+    const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken)
+    // login with credential
+    const firebaseUserCredential = await firebase.auth().signInWithCredential(credential);
+
+    this.props.navigation.navigate('HomeTab')
+    console.warn(JSON.stringify(firebaseUserCredential.user.toJSON()));
+  } catch (e) {
+    console.error(e);
+  }
+}
   render() {
     const resizeMode = 'center';
     const text = 'SocialBodhi\nBetterDecisions';
@@ -39,6 +62,15 @@ export default class Login extends Component {
         >
           {text}
       </Text>
+
+
+
+  <GoogleSigninButton
+    style={{ width: 192, height: 48 ,alignSelf: 'center'}}
+    size={GoogleSigninButton.Size.Wide}
+    color={GoogleSigninButton.Color.Dark}
+    onPress={() => this.googleLogin()}
+     />
 
 
 

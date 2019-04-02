@@ -17,7 +17,7 @@ export default class Loading extends Component {
     super(props)
 
     this.state = {
-      accessToken: true,
+      accessToken: false,
       loading: false
     };
   }

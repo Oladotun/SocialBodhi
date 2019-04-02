@@ -12,9 +12,13 @@ target 'SocialBodhi' do
   
   pod 'Firebase/Core'
   
+  pod 'Firebase/Auth'
+  
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  
+  pod 'GoogleSignIn'
   
   # Your 'node_modules' directory is probably in the root of your project,
   # but if not, adjust the `:path` accordingly
@@ -35,6 +39,8 @@ target 'SocialBodhi' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
 
   target 'SocialBodhiTests' do
     inherit! :search_paths

@@ -13,7 +13,6 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* SocialBodhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SocialBodhiTests.m */; };
-		08D6BF35FE528F9BEF718A1E /* libPods-SocialBodhiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD674D8465DA3B323DACF5B /* libPods-SocialBodhiTests.a */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -25,6 +24,7 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		17D5701D3520425FB5BD95CA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB5A4E4D92BC44D29695FDC5 /* EvilIcons.ttf */; };
+		1AD930AE6AFA75FD2B0AF879 /* libPods-SocialBodhi-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A093261DDA3C04876CAC1B /* libPods-SocialBodhi-tvOSTests.a */; };
 		26FE269D7FBB4C6882943A84 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 472E7CD252AC449691F588AC /* FontAwesome5_Brands.ttf */; };
 		2970EDD6621344499140D896 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 899147F4D23745A989CFA7CD /* AntDesign.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -41,13 +41,14 @@
 		2DCD954D1E0B4F2C00145EB5 /* SocialBodhiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SocialBodhiTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		38E6896AE3BB4D25A9A599FF /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84CA64E9EFE64503A02F5BFA /* MaterialIcons.ttf */; };
+		4193EA14A9A9F138968B55AA /* libPods-SocialBodhiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F356A63CDCDC9B0F6931E37 /* libPods-SocialBodhiTests.a */; };
 		4D4065BFDBA14ED1B26AA5B9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F6ED586BC204F4296DD6DFB /* SimpleLineIcons.ttf */; };
 		4E987F95AAEE416B86DBEF90 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3521A6C78167474290A1DCA5 /* Zocial.ttf */; };
 		4EACC040CC4E4269892FB8B0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9680CA239474379B64B89EF /* Entypo.ttf */; };
 		52D344B15451463183C13652 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F5E24F4D5E4BDA96AB8F9C /* Ionicons.ttf */; };
+		5B894C43F71E7FF7DB9F8D85 /* libPods-SocialBodhi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E0DC6AEA399633AAEB886B /* libPods-SocialBodhi.a */; };
 		5DA766EB8F5D4AFAAF3C5FA4 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B86EC4157C4357B0E267EE /* libRNFirebase.a */; };
 		5F7D32C5302F41B3AFD9D403 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2259F8DC94644834A6869475 /* MaterialCommunityIcons.ttf */; };
-		706395B25964EAF0BAED5153 /* libPods-SocialBodhi-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9195040B6B0A70AF1DBD85E3 /* libPods-SocialBodhi-tvOSTests.a */; };
 		7C1361A82241F3740033E1CA /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1361732241F3740033E1CA /* Octicons.ttf */; };
 		7C1361A92241F3740033E1CA /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1361742241F3740033E1CA /* Feather.ttf */; };
 		7C1361AA2241F3740033E1CA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1361752241F3740033E1CA /* Entypo.ttf */; };
@@ -65,11 +66,19 @@
 		7C1361B62241F3740033E1CA /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1361812241F3740033E1CA /* MaterialIcons.ttf */; };
 		7C963498224354110096CF0F /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */; };
 		7C9634D12243FD270096CF0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C9634A92243FD260096CF0F /* GoogleService-Info.plist */; };
+		7CF29EA82252FD950027A299 /* libGoogleUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EA72252FD950027A299 /* libGoogleUtilities.a */; };
+		7CF29EA92252FD950027A299 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EA62252FD7E0027A299 /* libRNGoogleSignin.a */; };
+		7CF29EBC225308510027A299 /* libGoogleToolboxForMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EBB225308510027A299 /* libGoogleToolboxForMac.a */; };
+		7CF29EE7225308770027A299 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EE5225308760027A299 /* AddressBook.framework */; };
+		7CF29EE8225308770027A299 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EE6225308760027A299 /* AddressBookUI.framework */; };
+		7CF29EEA225308820027A299 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EE9225308820027A299 /* SafariServices.framework */; };
+		7CF29EEC2253088E0027A299 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EEB2253088E0027A299 /* SystemConfiguration.framework */; };
+		7CF29EEE2253089C0027A299 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EED2253089C0027A299 /* libz.tbd */; };
+		7CF29EF0225309670027A299 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF29EEF225309670027A299 /* GoogleSignIn.framework */; };
 		7CFB065A4F4A4234A64563A9 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D431CC1C725A4DDA8444C4DF /* FontAwesome5_Regular.ttf */; };
+		80C35B0279977CFDF0586488 /* libPods-SocialBodhi-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9E73FEF92476568E13FC84 /* libPods-SocialBodhi-tvOS.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		83BDD2D8241440C59B684663 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440FCAB0317344C5A89A2F78 /* FontAwesome.ttf */; };
-		85C6391294563375EEB45673 /* libPods-SocialBodhi-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716C74906FFC9D31D18B9F8E /* libPods-SocialBodhi-tvOS.a */; };
-		8A62E72441AE6404D308F7EF /* libPods-SocialBodhi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC2FF82E36733816598E6C8 /* libPods-SocialBodhi.a */; };
 		8E20086825874C718241791F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047BEAEB042248409FC96260 /* FontAwesome5_Solid.ttf */; };
 		99356506EFBC4031B4B8C031 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD188F2755C4F1BBDB341BD /* Octicons.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -360,6 +369,13 @@
 			remoteGlobalIDString = 9350E0F11CE3B0920041D815;
 			remoteInfo = RCTFBSDK;
 		};
+		7CF29EA52252FD7E0027A299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF29E7A2252FD7E0027A299 /* RNGoogleSignin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
+			remoteInfo = RNGoogleSignin;
+		};
 		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
@@ -387,7 +403,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SocialBodhiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialBodhiTests.m; sourceTree = "<group>"; };
 		047BEAEB042248409FC96260 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		11BF1AE6A54E576FD85F3147 /* Pods-SocialBodhi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi/Pods-SocialBodhi.release.xcconfig"; sourceTree = "<group>"; };
+		07E0DC6AEA399633AAEB886B /* libPods-SocialBodhi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* SocialBodhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBodhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,24 +414,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SocialBodhi/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SocialBodhi/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1C3898E170FA176E1BB7FD70 /* Pods-SocialBodhi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi/Pods-SocialBodhi.debug.xcconfig"; sourceTree = "<group>"; };
+		1D9E73FEF92476568E13FC84 /* libPods-SocialBodhi-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2259F8DC94644834A6869475 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		2861FF6972714457A33C0892 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* SocialBodhi-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocialBodhi-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SocialBodhi-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocialBodhi-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3521A6C78167474290A1DCA5 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		3DC2FF82E36733816598E6C8 /* libPods-SocialBodhi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F356A63CDCDC9B0F6931E37 /* libPods-SocialBodhiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		440FCAB0317344C5A89A2F78 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		472E7CD252AC449691F588AC /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		4A2A2BB8ED384E9F91FC73B6 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		4F6ED586BC204F4296DD6DFB /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		50F5E24F4D5E4BDA96AB8F9C /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5337C5A897C5DC3E2FE88607 /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOSTests/Pods-SocialBodhi-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57B86EC4157C4357B0E267EE /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		649B7856F7124D529089194C /* libRCTFBSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTFBSDK.a; sourceTree = "<group>"; };
-		716C74906FFC9D31D18B9F8E /* libPods-SocialBodhi-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		741ABD40816E2E23F97BF89B /* Pods-SocialBodhi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi/Pods-SocialBodhi.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7B67CC4F120701A3F9E2C445 /* Pods-SocialBodhiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhiTests.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhiTests/Pods-SocialBodhiTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C1361732241F3740033E1CA /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		7C1361742241F3740033E1CA /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
 		7C1361752241F3740033E1CA /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
@@ -437,24 +455,31 @@
 		7C96346F224354060096CF0F /* libFBSDKShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFBSDKShareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9634992243541F0096CF0F /* libBolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBolts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9634A92243FD260096CF0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SocialBodhi/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7CD674D8465DA3B323DACF5B /* libPods-SocialBodhiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2D35B3B332A402FF4057D0 /* Pods-SocialBodhiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhiTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhiTests/Pods-SocialBodhiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CF29E7A2252FD7E0027A299 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		7CF29EA72252FD950027A299 /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF29EBB225308510027A299 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF29EE5225308760027A299 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7CF29EE6225308760027A299 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		7CF29EE9225308820027A299 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		7CF29EEB2253088E0027A299 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7CF29EED2253089C0027A299 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7CF29EEF225309670027A299 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		84CA64E9EFE64503A02F5BFA /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		899147F4D23745A989CFA7CD /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		8C0BAA00F95F87EBC797921A /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOSTests/Pods-SocialBodhi-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9195040B6B0A70AF1DBD85E3 /* libPods-SocialBodhi-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF8422F5E1721ED790DD29D /* Pods-SocialBodhi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi/Pods-SocialBodhi.release.xcconfig"; sourceTree = "<group>"; };
 		94A4FBBE80054ABA8A939721 /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
-		9AC9F26E020BE35D417CB325 /* Pods-SocialBodhi-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOS/Pods-SocialBodhi-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		B74E8DFA3E84D092CA664E93 /* Pods-SocialBodhiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhiTests.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhiTests/Pods-SocialBodhiTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA95C770E85F87662D6840E8 /* Pods-SocialBodhi-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOS/Pods-SocialBodhi-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5A4E4D92BC44D29695FDC5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		BBD7101733C9C08252BD8093 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOSTests/Pods-SocialBodhi-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF55441D5EF74803BCAF191E /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D431CC1C725A4DDA8444C4DF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		DA801D7628690815A8C53A06 /* Pods-SocialBodhi-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOS/Pods-SocialBodhi-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D48EF9E4D7F67E5AFC846F08 /* Pods-SocialBodhiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhiTests.debug.xcconfig"; path = "Target Support Files/Pods-SocialBodhiTests/Pods-SocialBodhiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5EBEE706AD5D0A1A607F9F9 /* Pods-SocialBodhi-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOS/Pods-SocialBodhi-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		DD249C69CEC9A2641E3742E1 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBodhi-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-SocialBodhi-tvOSTests/Pods-SocialBodhi-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F4A093261DDA3C04876CAC1B /* libPods-SocialBodhi-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialBodhi-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9680CA239474379B64B89EF /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		FAD188F2755C4F1BBDB341BD /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -465,7 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				08D6BF35FE528F9BEF718A1E /* libPods-SocialBodhiTests.a in Frameworks */,
+				4193EA14A9A9F138968B55AA /* libPods-SocialBodhiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +498,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF29EF0225309670027A299 /* GoogleSignIn.framework in Frameworks */,
+				7CF29EEE2253089C0027A299 /* libz.tbd in Frameworks */,
+				7CF29EEC2253088E0027A299 /* SystemConfiguration.framework in Frameworks */,
+				7CF29EEA225308820027A299 /* SafariServices.framework in Frameworks */,
+				7CF29EE7225308770027A299 /* AddressBook.framework in Frameworks */,
+				7CF29EE8225308770027A299 /* AddressBookUI.framework in Frameworks */,
+				7CF29EBC225308510027A299 /* libGoogleToolboxForMac.a in Frameworks */,
+				7CF29EA82252FD950027A299 /* libGoogleUtilities.a in Frameworks */,
+				7CF29EA92252FD950027A299 /* libRNGoogleSignin.a in Frameworks */,
 				7C963498224354110096CF0F /* libcxxreact.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -488,7 +522,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				5DA766EB8F5D4AFAAF3C5FA4 /* libRNFirebase.a in Frameworks */,
-				8A62E72441AE6404D308F7EF /* libPods-SocialBodhi.a in Frameworks */,
+				5B894C43F71E7FF7DB9F8D85 /* libPods-SocialBodhi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +539,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
-				85C6391294563375EEB45673 /* libPods-SocialBodhi-tvOS.a in Frameworks */,
+				80C35B0279977CFDF0586488 /* libPods-SocialBodhi-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
-				706395B25964EAF0BAED5153 /* libPods-SocialBodhi-tvOSTests.a in Frameworks */,
+				1AD930AE6AFA75FD2B0AF879 /* libPods-SocialBodhi-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +675,14 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CF29EEF225309670027A299 /* GoogleSignIn.framework */,
+				7CF29EED2253089C0027A299 /* libz.tbd */,
+				7CF29EEB2253088E0027A299 /* SystemConfiguration.framework */,
+				7CF29EE9225308820027A299 /* SafariServices.framework */,
+				7CF29EE5225308760027A299 /* AddressBook.framework */,
+				7CF29EE6225308760027A299 /* AddressBookUI.framework */,
+				7CF29EBB225308510027A299 /* libGoogleToolboxForMac.a */,
+				7CF29EA72252FD950027A299 /* libGoogleUtilities.a */,
 				7C9634992243541F0096CF0F /* libBolts.a */,
 				7C96346B224354060096CF0F /* libFBSDKCoreKit.a */,
 				7C96346D224354060096CF0F /* libFBSDKLoginKit.a */,
@@ -648,10 +690,10 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				3DC2FF82E36733816598E6C8 /* libPods-SocialBodhi.a */,
-				716C74906FFC9D31D18B9F8E /* libPods-SocialBodhi-tvOS.a */,
-				9195040B6B0A70AF1DBD85E3 /* libPods-SocialBodhi-tvOSTests.a */,
-				7CD674D8465DA3B323DACF5B /* libPods-SocialBodhiTests.a */,
+				07E0DC6AEA399633AAEB886B /* libPods-SocialBodhi.a */,
+				1D9E73FEF92476568E13FC84 /* libPods-SocialBodhi-tvOS.a */,
+				F4A093261DDA3C04876CAC1B /* libPods-SocialBodhi-tvOSTests.a */,
+				3F356A63CDCDC9B0F6931E37 /* libPods-SocialBodhiTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -659,14 +701,14 @@
 		505B2FD033E09A10C5725A47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				741ABD40816E2E23F97BF89B /* Pods-SocialBodhi.debug.xcconfig */,
-				11BF1AE6A54E576FD85F3147 /* Pods-SocialBodhi.release.xcconfig */,
-				DA801D7628690815A8C53A06 /* Pods-SocialBodhi-tvOS.debug.xcconfig */,
-				9AC9F26E020BE35D417CB325 /* Pods-SocialBodhi-tvOS.release.xcconfig */,
-				8C0BAA00F95F87EBC797921A /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */,
-				BBD7101733C9C08252BD8093 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */,
-				7D2D35B3B332A402FF4057D0 /* Pods-SocialBodhiTests.debug.xcconfig */,
-				B74E8DFA3E84D092CA664E93 /* Pods-SocialBodhiTests.release.xcconfig */,
+				1C3898E170FA176E1BB7FD70 /* Pods-SocialBodhi.debug.xcconfig */,
+				8FF8422F5E1721ED790DD29D /* Pods-SocialBodhi.release.xcconfig */,
+				BA95C770E85F87662D6840E8 /* Pods-SocialBodhi-tvOS.debug.xcconfig */,
+				D5EBEE706AD5D0A1A607F9F9 /* Pods-SocialBodhi-tvOS.release.xcconfig */,
+				5337C5A897C5DC3E2FE88607 /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */,
+				DD249C69CEC9A2641E3742E1 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */,
+				D48EF9E4D7F67E5AFC846F08 /* Pods-SocialBodhiTests.debug.xcconfig */,
+				7B67CC4F120701A3F9E2C445 /* Pods-SocialBodhiTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -745,9 +787,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7CF29E7B2252FD7E0027A299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF29EA62252FD7E0027A299 /* libRNGoogleSignin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7CF29E7A2252FD7E0027A299 /* RNGoogleSignin.xcodeproj */,
 				7C1361B72241F5A30033E1CA /* RNGestureHandler.xcodeproj */,
 				7C1361722241F3740033E1CA /* Fonts */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -838,12 +889,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7CF29EAA225301C40027A299 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		00E356ED1AD99517003FC87E /* SocialBodhiTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SocialBodhiTests" */;
 			buildPhases = (
-				07E693ECB659327E90ADD1FB /* [CP] Check Pods Manifest.lock */,
+				6B0D812BC656955A01C9452C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -862,12 +923,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SocialBodhi" */;
 			buildPhases = (
-				5AE518E48933743E3CBCAC71 /* [CP] Check Pods Manifest.lock */,
+				73DD4214D4BF46D4A24263ED /* [CP] Check Pods Manifest.lock */,
+				7CF29EAA225301C40027A299 /* Headers */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				D9CBE5A0108F985F61822D14 /* [CP] Copy Pods Resources */,
+				FE9840FAE1EE6CC222A1B0E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -882,7 +944,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SocialBodhi-tvOS" */;
 			buildPhases = (
-				7118468BDE4AA1F9D1E85BE7 /* [CP] Check Pods Manifest.lock */,
+				35D9AC72B0DAC26E6A53E9B6 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
@@ -901,7 +963,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "SocialBodhi-tvOSTests" */;
 			buildPhases = (
-				4A6153D7D8678D44CB96C6B6 /* [CP] Check Pods Manifest.lock */,
+				80558FD2AB619DA5F2D74BFB /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -1011,6 +1073,10 @@
 				{
 					ProductGroup = 7C1361B82241F5A30033E1CA /* Products */;
 					ProjectRef = 7C1361B72241F5A30033E1CA /* RNGestureHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = 7CF29E7B2252FD7E0027A299 /* Products */;
+					ProjectRef = 7CF29E7A2252FD7E0027A299 /* RNGoogleSignin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1290,6 +1356,13 @@
 			remoteRef = 7CAD099F223AF65200003081 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7CF29EA62252FD7E0027A299 /* libRNGoogleSignin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGoogleSignin.a;
+			remoteRef = 7CF29EA52252FD7E0027A299 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1384,29 +1457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		07E693ECB659327E90ADD1FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocialBodhiTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1422,51 +1473,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4A6153D7D8678D44CB96C6B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocialBodhi-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5AE518E48933743E3CBCAC71 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocialBodhi-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7118468BDE4AA1F9D1E85BE7 /* [CP] Check Pods Manifest.lock */ = {
+		35D9AC72B0DAC26E6A53E9B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1488,7 +1495,73 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9CBE5A0108F985F61822D14 /* [CP] Copy Pods Resources */ = {
+		6B0D812BC656955A01C9452C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialBodhiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73DD4214D4BF46D4A24263ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialBodhi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80558FD2AB619DA5F2D74BFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialBodhi-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9840FAE1EE6CC222A1B0E5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1497,6 +1570,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SocialBodhi/Pods-SocialBodhi-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -1517,6 +1591,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -1605,7 +1680,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D2D35B3B332A402FF4057D0 /* Pods-SocialBodhiTests.debug.xcconfig */;
+			baseConfigurationReference = D48EF9E4D7F67E5AFC846F08 /* Pods-SocialBodhiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1637,7 +1712,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B74E8DFA3E84D092CA664E93 /* Pods-SocialBodhiTests.release.xcconfig */;
+			baseConfigurationReference = 7B67CC4F120701A3F9E2C445 /* Pods-SocialBodhiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1666,16 +1741,20 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741ABD40816E2E23F97BF89B /* Pods-SocialBodhi.debug.xcconfig */;
+			baseConfigurationReference = 1C3898E170FA176E1BB7FD70 /* Pods-SocialBodhi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 					"\"${PODS_ROOT}/BuildHeaders\"/**",
-					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\\\" /** \"${PODS_ROOT}/Headers/Public/FBSDKCoreKit/FBSKAppEvents\"/**",
+					"\"${PODS_ROOT}/Headers/Public/FBSDKCoreKit\\\" /** \"${PODS_ROOT}/Headers/Public/FBSDKCoreKit/FBSKAppEvents\"/** $(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
 				);
 				INFOPLIST_FILE = SocialBodhi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1692,10 +1771,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11BF1AE6A54E576FD85F3147 /* Pods-SocialBodhi.release.xcconfig */;
+			baseConfigurationReference = 8FF8422F5E1721ED790DD29D /* Pods-SocialBodhi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
@@ -1716,7 +1799,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA801D7628690815A8C53A06 /* Pods-SocialBodhi-tvOS.debug.xcconfig */;
+			baseConfigurationReference = BA95C770E85F87662D6840E8 /* Pods-SocialBodhi-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1753,7 +1836,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AC9F26E020BE35D417CB325 /* Pods-SocialBodhi-tvOS.release.xcconfig */;
+			baseConfigurationReference = D5EBEE706AD5D0A1A607F9F9 /* Pods-SocialBodhi-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1790,7 +1873,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C0BAA00F95F87EBC797921A /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5337C5A897C5DC3E2FE88607 /* Pods-SocialBodhi-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1826,7 +1909,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBD7101733C9C08252BD8093 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = DD249C69CEC9A2641E3742E1 /* Pods-SocialBodhi-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
