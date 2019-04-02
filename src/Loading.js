@@ -3,6 +3,7 @@ import {
   ImageBackground,
   Text,StyleSheet
 } from 'react-native';
+import firebase from 'react-native-firebase';
 
 // import Home from './Home.js';
 // import Login from './Login.js';
@@ -18,13 +19,19 @@ export default class Loading extends Component {
 
     this.state = {
       accessToken: false,
-      loading: false
+      loading: true
     };
   }
 
   
 
-  componentDidMount() {
+ 
+
+
+    componentDidMount() {
+    firebase.auth().onAuthStateChanged(user => {
+      this.props.navigation.navigate(user ? 'HomeTab' : 'Login')
+    })
     // AccessToken.getCurrentAccessToken()
     // .then((data) => {
     //   this.setState({

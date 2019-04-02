@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import {
   ImageBackground,
+  Button,
   Text,StyleSheet
 } from 'react-native';
 
+import firebase from 'react-native-firebase'
 
 const remote = 'HomeBackground.png';
 
@@ -12,6 +14,16 @@ export default class Profile extends Component {
   static navigationOptions = {
         header: null
     }
+
+  signOutUser = async () => {
+    try {
+        await firebase.auth().signOut();
+        this.props.navigation.state('Home');
+        this.props.navigation.navigate('Login');
+    } catch (e) {
+        console.log(e);
+    }
+ }
   render() {
     const resizeMode = 'center';
     const text = 'I am in Profile \n';
@@ -40,6 +52,8 @@ export default class Profile extends Component {
         >
           {text}
       </Text>
+
+       <Button title="logout" onPress={() => this.signOutUser()} />
 
        </ImageBackground>
 
