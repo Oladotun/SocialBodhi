@@ -6,6 +6,15 @@ import Loading from './Loading';
 import Login from './Login.js';
 import Profile from './Profile.js';
 import Activity from './Activity.js';
+import NewQuestion from './AddNewQuestions.js'
+
+// HomeNav = createStackNavigator({
+//   Home: {screen:Home},
+
+//   NewQuestion: {screen: NewQuestion}
+ 
+// })
+
 
 const HomeTab = createBottomTabNavigator({
 	Home: {
@@ -50,6 +59,8 @@ const HomeTab = createBottomTabNavigator({
 
 
 
+
+
 HomeTab.navigationOptions = ({ navigation }) => {
   const { routeName } = navigation.state.routes[navigation.state.index];
 
@@ -68,6 +79,8 @@ const LoadNav = createStackNavigator({
   Loading: {screen: Loading},
   HomeTab: {screen: HomeTab},
   Login: { screen: Login },
+  NewQuestion: {screen: NewQuestion}
+
 
 });
 
