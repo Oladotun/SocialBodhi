@@ -14,6 +14,7 @@ export default class AddNewQuestions extends Component
         this.state = { valueArray: [], disabled: false, message:[]}
  
         this.index = 0;
+        this.messageIndex = 0;
  
         this.animatedValue = new Animated.Value(0);
     }
@@ -22,8 +23,13 @@ export default class AddNewQuestions extends Component
         title: 'Home'
     }
 
-     addMessage= (text) => {
-      var joined = this.state.message.concat(text);
+     addMessage = (text,index) => {
+      console.log("text", text)
+      console.log("index", index)
+      console.log("message",this.state.message)
+      var joined = this.state.message.slice();
+      joined[index] = text;
+      // this.messageIndex = this.messageIndex+1;
       console.log(joined)
       this.setState({ message: joined})
     }
@@ -32,9 +38,12 @@ export default class AddNewQuestions extends Component
   removeClick = () =>{
     if(this.state.valueArray.length>0){
       let values = this.state.valueArray;
-     let messages = this.state.messages;
+     let messages = this.state.message;
+     console.log("message is ",messages);
+     console.log("value is ",values);
      values.splice(-1,1);
      messages.splice(-1,1);
+     this.index = this.index -1;
      this.setState({ valueArray: values, message:messages });
 
     }
@@ -92,7 +101,7 @@ export default class AddNewQuestions extends Component
                        placeholder = "Enter Poll Option"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
-                       onChangeText = {this.addPrompt}
+                       onChangeText = {(value) => this.addMessage(value,this.index+1)}
                        defaultValue=""
                        />
                     </Animated.View>
@@ -107,7 +116,7 @@ export default class AddNewQuestions extends Component
                        placeholder = "Enter Poll Option"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
-                       onChangeText = {this.addMessage}
+                       onChangeText = {(value) => this.addMessage(value,this.index+1)}
                        defaultValue=""
                        />
                     </View>
@@ -135,7 +144,7 @@ export default class AddNewQuestions extends Component
                        placeholder = "Enter Poll Option"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
-                       onChangeText = {this.addMessage}
+                       onChangeText = {(value) => this.addMessage(value,0)}
                        />
 
                        <TextInput style = {styles.input}
@@ -143,13 +152,8 @@ export default class AddNewQuestions extends Component
                        placeholder = "Enter Poll Option"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
-                       onChangeText = {this.addMessage}
+                       onChangeText = {(value) => this.addMessage(value,1)}
                        />
-
-                       
-
-                    
-                    
 
 
                     {
