@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Button,View, TextInput, Platform, StyleSheet, TouchableOpacity, Animated, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class AddNewQuestions extends Component
+export default class AddParticipants extends Component
 {
     constructor()
     {
         super();
  
-        this.state = { valueArray: [], disabled: false, message:[],promptValue: null}
+        this.state = { valueArray: [], disabled: false, message:[]}
  
         this.index = 0;
         this.messageIndex = 0;
@@ -18,11 +18,11 @@ export default class AddNewQuestions extends Component
 
     static navigationOptions = ({ navigation }) => {
        
-       return{ headerTitle: 'New Question',
+       return{ headerTitle: 'Add Participant',
         headerRight: (
         <Button
           onPress={navigation.getParam('nextButton')}
-          title="Next"
+          title="Save"
           
         />
       )
@@ -41,22 +41,14 @@ export default class AddNewQuestions extends Component
     nextButton = () => {
       var goNext = true;
 
-        console.log("promptValue",this.state.promptValue);
-        console.log("message array",this.state.message.length);
-        console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
-
-      if(this.state.promptValue == null || this.state.promptValue == "" ){
-        goNext = false;
-      } else if (this.state.message.length < 2){
+      if (this.state.message.length < 2){
         goNext = false;
          // alert('One or more fields cannot be empty');
       } else {
 
-        // console.log("value array",this.state.valueArray.length);
-        // console.log("message array",this.state.message.length);
-        // console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
-
-        if((this.state.message.length - this.state.valueArray.length) != 2){ // ensure that the message length and value array are constant
+        
+        // Ensure animated field and constant have same difference of two
+        if((this.state.message.length - this.state.valueArray.length) != 2){
           goNext = false
         } else {
 
@@ -76,7 +68,7 @@ export default class AddNewQuestions extends Component
       
 
         if (goNext){
-           this.props.navigation.navigate("NewParticipant")
+           this.props.navigation.navigate("HomeTab")
            // console.log("goNext");
         } else {
           alert('One or more fields cannot be empty');
@@ -114,7 +106,7 @@ export default class AddNewQuestions extends Component
 
     addPrompt= (text) => {
       
-      this.setState({ promptValue: text})
+      this.setState({ prompt: text})
     }
 
  
@@ -160,7 +152,7 @@ export default class AddNewQuestions extends Component
 
                         <TextInput style = {styles.input}
                        underlineColorAndroid = "transparent"
-                       placeholder = "Enter Poll Option"
+                       placeholder = "Enter Email"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
                        onChangeText = {(value) => this.addMessage(value,key+2)}
@@ -176,7 +168,7 @@ export default class AddNewQuestions extends Component
                     <View key = { key } >
                         <TextInput style = {styles.input}
                        underlineColorAndroid = "transparent"
-                       placeholder = "Enter Poll Option"
+                       placeholder = "Enter Email"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
                        onChangeText = {(value) => this.addMessage(value,key+2)}
@@ -192,19 +184,12 @@ export default class AddNewQuestions extends Component
                 <ScrollView>
 
                     <View style = {{ flex: 1, padding: 4 }}>
-                      <TextInput style = {styles.multiLine}
-                       underlineColorAndroid = "transparent"
-                       placeholder = "Enter Prompt Question?"
-                       placeholderTextColor = "#9a73ef"
-                       autoCapitalize = "none"
-                       onChangeText = {(value)=> this.setState({promptValue:value})}
-                       multiline={true}
-                       />
+                      
 
 
                     <TextInput style = {styles.input}
                        underlineColorAndroid = "transparent"
-                       placeholder = "Enter Poll Option"
+                       placeholder = "Enter Email"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
                        onChangeText = {(value) => this.addMessage(value,0)}
@@ -212,7 +197,7 @@ export default class AddNewQuestions extends Component
 
                        <TextInput style = {styles.input}
                        underlineColorAndroid = "transparent"
-                       placeholder = "Enter Poll Option"
+                       placeholder = "Enter Email"
                        placeholderTextColor = "#9a73ef"
                        autoCapitalize = "none"
                        onChangeText = {(value) => this.addMessage(value,1)}

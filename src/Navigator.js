@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
 import { createStackNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation";
+import { Button} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Home from './Home.js';
 import Loading from './Loading';
 import Login from './Login.js';
 import Profile from './Profile.js';
 import Activity from './Activity.js';
-import NewQuestion from './AddNewQuestions.js'
-
-// HomeNav = createStackNavigator({
-//   Home: {screen:Home},
-
-//   NewQuestion: {screen: NewQuestion}
- 
-// })
+import NewQuestion from './AddNewQuestions.js';
+import NewParticipant from './AddParticipants.js';
 
 
 const HomeTab = createBottomTabNavigator({
@@ -79,7 +74,10 @@ const LoadNav = createStackNavigator({
   Loading: {screen: Loading},
   HomeTab: {screen: HomeTab},
   Login: { screen: Login },
-  NewQuestion: {screen: NewQuestion}
+  NewQuestion: {
+    screen: NewQuestion
+  },
+  NewParticipant: {screen:NewParticipant}
 
 
 });
