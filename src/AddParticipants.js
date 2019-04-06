@@ -107,8 +107,15 @@ export default class AddParticipants extends Component
       _storeData = async (token1,token2) => {
         try {
           // console.log("This is the token getting stored ", token);
-          await AsyncStorage.setItem('@MySuperStore:accessToken', token1);
-          await AsyncStorage.setItem('@MySuperStore:refreshToken', token2);
+          if(token1){
+            await AsyncStorage.setItem('@MySuperStore:accessToken', token1);
+          }
+
+          if(token2){
+             await AsyncStorage.setItem('@MySuperStore:refreshToken', token2);
+          }
+          
+         
         } catch (error) {
           // Error saving data
         }
@@ -236,10 +243,7 @@ export default class AddParticipants extends Component
                   return response.json();
               })
               .then((responseJson) => {
-                console.log("responseJson=",responseJson);
                 var data = responseJson;
-                console.log("json is ");
-                console.log(responseJson['feed']['entry']);
                 this._getContact(responseJson['feed']['entry']);
               })
              .catch((error) => {
@@ -302,13 +306,13 @@ export default class AddParticipants extends Component
     }
 
      addMessage = (text,index) => {
-      console.log("text", text)
-      console.log("index", index)
-      console.log("message",this.state.message)
+      // console.log("text", text)
+      // console.log("index", index)
+      // console.log("message",this.state.message)
       var joined = this.state.message.slice();
       joined[index] = text;
       // this.messageIndex = this.messageIndex+1;
-      console.log(joined)
+      // console.log(joined)
       this.setState({ message: joined})
     }
 
