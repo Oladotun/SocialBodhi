@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Button,View, TextInput, Platform, StyleSheet, TouchableOpacity, Animated, ScrollView} from 'react-native';
+import { Button,View, TextInput, Platform, StyleSheet, FormData,TouchableOpacity, Animated,AsyncStorage, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import firebase from 'react-native-firebase';
+import { GoogleSignin } from 'react-native-google-signin';
+import SearchableDropdown from 'react-native-searchable-dropdown';
 
 export default class AddParticipants extends Component
 {
@@ -8,7 +11,7 @@ export default class AddParticipants extends Component
     {
         super();
  
-        this.state = { valueArray: [], disabled: false, message:[]}
+        this.state = { valueArray: [], disabled: false, message:[], accessTokens: '',items:[]}
  
         this.index = 0;
         this.messageIndex = 0;
@@ -34,7 +37,230 @@ export default class AddParticipants extends Component
 
     componentDidMount() {
     this.props.navigation.setParams({ nextButton: this.nextButton });
-    }
+    // this._retrieveData();
+    this._retrieveDataToken('access');
+
+
+  }
+
+
+
+    defaultheader = function () {
+       return {
+           method: null,
+           body: null,
+           crossDomain: true,
+           cache: false,
+           async: false,
+           timeout: 3000,
+           headers: {
+           "Content-Type": "application/json",
+           "Authorization":"",
+           "Accept": "*/*",
+           "Access-Control-Allow-Headers":"*",
+           "Access-Control-Allow-Headers":"*",
+           "X-Requested-With":"XMLHttpRequest"
+           },
+       };
+    };
+
+
+
+      transformRequest(obj){
+       var str = [];
+       for (var p in obj)
+       str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+       return str.join("&");
+      };
+
+
+      _getContact= (data ) => {
+
+        var emails = [];
+        // var nameList = [];
+        var emailNumber = 0;
+
+        for(i in data) {
+          var value = data[i];
+          if (value['gd$email']) {
+            var emailList = value['gd$email']
+            // var name = value['title']['$t']
+            var address = emailList[0];
+            var addressValue = address['address'];
+
+            emails[emailNumber] = {id: emailNumber + 1, name: addressValue};
+            // nameList[emailNumber] = name;
+            emailNumber = emailNumber + 1;
+          }
+
+          
+          
+
+        }
+        console.log(emails);
+        this.setState({items:emails});
+        // console.log(nameList)
+
+      }
+
+
+      _storeData = async (token1,token2) => {
+        try {
+          // console.log("This is the token getting stored ", token);
+          await AsyncStorage.setItem('@MySuperStore:accessToken', token1);
+          await AsyncStorage.setItem('@MySuperStore:refreshToken', token2);
+        } catch (error) {
+          // Error saving data
+        }
+      };
+
+
+        defaultForm = function(){
+
+        return {
+
+          grant_type: "refresh_token",
+          client_id: "",
+          client_secret: "",
+          refresh_token:"",
+          access_type:"offline" 
+          
+
+
+
+
+        }
+      }
+
+
+     getTokenForUser = async(value) => {
+
+
+               // console.log("In here get token user");
+
+              var formData = this.defaultForm();
+              
+
+              formData["client_id"] = "205524069868-o5l9t8v1ebqdikaep10t3kni54hqctrn.apps.googleusercontent.com"
+              formData["client_secret"] = "OawvnISRqtltBy_LeR4XeW6T"
+              formData["refresh_token"] = value
+
+              console.log(JSON.stringify(formData))
+
+              // console.log("Going to fetch");
+             fetch('https://www.googleapis.com/oauth2/v4/token', {
+                method: 'POST',
+                headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+                body: JSON.stringify(formData)
+
+              })
+             .then((response) =>{
+                setTimeout(() => {let a=0;}, 0); 
+                // console.log("loading json")
+                return response.json()
+              })
+             .then((responseJson) => {
+              console.log("responseJson=",responseJson)
+
+              this._storeData(responseJson['access_token'],responseJson['refresh_token']);
+
+              this._retrieveData(responseJson['access_token']);
+
+              
+              })
+              .catch((error) => {
+                  console.log("An error occurred.Please try again",error);
+                 })
+
+              // console.log("After fetch");
+            }
+
+
+    
+
+
+      _retrieveDataToken = async (type) => {
+            try {
+           
+              const value = await AsyncStorage.getItem('@MySuperStore:'+type+'Token');
+              // console.log("In after token")
+              // console.log('@MySuperStore:'+type+'Token')
+
+              if(type=='refresh' && value !=null){
+                // console.log("type is refresh")
+                this.getTokenForUser(value)
+              }
+               else if (value !== null) {
+                // We have data!!
+                // console.log(value);
+                // this.getTokenForUser(value);
+                this._retrieveData(value);
+              } else{
+                console.log("Value is null")
+              }
+            } catch (error) {
+              // Error retrieving data
+              console.log("There is error", error)
+            }
+          };
+
+   
+      _retrieveData = async (tokens) => {
+          try {
+           
+              // const tokens = await GoogleSignin.getTokens()
+              
+              if (tokens != null){
+
+                const header =this.defaultheader();
+                let params={
+                 "alt":"json",
+                 "max-results":100
+                };
+                header.method='GET';
+                let url="https://www.google.com/m8/feeds/contacts/default/full?";
+                var suburl=this.transformRequest(params);
+                url=url+suburl;
+
+                
+              header.headers["Authorization"]= 'Bearer'+' '+tokens;
+              console.log("header is ", header);
+
+              fetch(url, header)
+              .then((response) => {
+                  setTimeout(() => {let a=0;}, 0); 
+                  // console.log(response.text())
+                  return response.json();
+              })
+              .then((responseJson) => {
+                console.log("responseJson=",responseJson);
+                var data = responseJson;
+                console.log("json is ");
+                console.log(responseJson['feed']['entry']);
+                this._getContact(responseJson['feed']['entry']);
+              })
+             .catch((error) => {
+              this._retrieveDataToken('refresh')
+              console.log("An error occurred.Please try again",error);
+             });
+
+              }
+              
+             
+          } catch (error) {
+            // Error retrieving data
+            console.log(error);
+          }
+        };
+
+      
+
+
+
+
 
 
 
@@ -187,13 +413,32 @@ export default class AddParticipants extends Component
                       
 
 
-                    <TextInput style = {styles.input}
-                       underlineColorAndroid = "transparent"
-                       placeholder = "Enter Email"
-                       placeholderTextColor = "#9a73ef"
-                       autoCapitalize = "none"
-                       onChangeText = {(value) => this.addMessage(value,0)}
-                       />
+                    <SearchableDropdown
+                      onTextChange={text => console.log(text)}
+                      onItemSelect={item => JSON.stringify(item)}
+                      containerStyle={{ padding: 5 }}
+                      textInputStyle={{
+                        padding: 12,
+                        borderWidth: 1,
+                        borderColor: '#ccc',
+                        borderRadius: 5,
+                      }}
+                      itemStyle={{
+                        padding: 10,
+                        marginTop: 2,
+                        backgroundColor: '#ddd',
+                        borderColor: '#bbb',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                      }}
+                      itemTextStyle={{ color: '#222' }}
+                      itemsContainerStyle={{ maxHeight: 140 }}
+                      items={this.state.items}
+                      defaultIndex={2}
+                      placeholder="placeholder"
+                      resetValue={false}
+                      underlineColorAndroid="transparent"
+                    />
 
                        <TextInput style = {styles.input}
                        underlineColorAndroid = "transparent"

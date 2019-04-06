@@ -39,6 +39,8 @@ export default class AddNewQuestions extends Component
 
 
     nextButton = () => {
+
+      // this.props.navigation.navigate("NewParticipant")
       var goNext = true;
 
         console.log("promptValue",this.state.promptValue);

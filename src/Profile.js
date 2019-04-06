@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 
 import firebase from 'react-native-firebase'
+import { GoogleSignin } from 'react-native-google-signin';
 
 const remote = 'HomeBackground.png';
 
@@ -18,7 +19,9 @@ export default class Profile extends Component {
   signOutUser = async () => {
     try {
         await firebase.auth().signOut();
-        this.props.navigation.state('Home');
+        await GoogleSignin.revokeAccess();
+        await GoogleSignin.signOut();
+        // this.props.navigation.state('Home');
         this.props.navigation.navigate('Login');
     } catch (e) {
         console.log(e);
