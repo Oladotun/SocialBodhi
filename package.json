@@ -9,14 +9,15 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.1",
+    "react-native-dropdown-autocomplete": "^1.0.10",
     "react-native-elements": "^1.1.0",
     "react-native-firebase": "^5.2.3",
     "react-native-gesture-handler": "^1.0.17",
     "react-native-google-signin": "^1.2.2",
-    "react-native-searchable-dropdown": "^1.0.6",
     "react-native-textinput-effects": "^0.5.1",
     "react-native-vector-icons": "^6.4.1",
-    "react-navigation": "^3.5.1"
+    "react-navigation": "^3.5.1",
+    "shortid": "^2.2.14"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",

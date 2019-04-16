@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Button,View, TextInput, Platform, StyleSheet, FormData,TouchableOpacity, Animated,AsyncStorage, ScrollView} from 'react-native';
+import { Button,View, TextInput, Platform, StyleSheet, FormData,TouchableOpacity,SafeAreaView, Animated,AsyncStorage, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import firebase from 'react-native-firebase';
-import { GoogleSignin } from 'react-native-google-signin';
-import SearchableDropdown from 'react-native-searchable-dropdown';
+// import { GoogleSignin } from 'react-native-google-signin';
+// import SearchableDropdown from 'react-native-searchable-dropdown';
+import shortid from "shortid";
 
-export default class AddParticipants extends Component
+
+import {Autocomplete, withKeyboardAwareScrollView} from "react-native-dropdown-autocomplete";
+
+class AddParticipants extends Component
 {
     constructor()
     {
@@ -88,7 +92,8 @@ export default class AddParticipants extends Component
             var address = emailList[0];
             var addressValue = address['address'];
 
-            emails[emailNumber] = {id: emailNumber + 1, name: addressValue};
+            // emails[emailNumber] = {id: emailNumber + 1, name: addressValue};
+            emails[emailNumber] = addressValue;
             // nameList[emailNumber] = name;
             emailNumber = emailNumber + 1;
           }
@@ -97,7 +102,7 @@ export default class AddParticipants extends Component
           
 
         }
-        console.log(emails);
+        // console.log(emails);
         this.setState({items:emails});
         // console.log(nameList)
 
@@ -271,30 +276,33 @@ export default class AddParticipants extends Component
     nextButton = () => {
       var goNext = true;
 
-      if (this.state.message.length < 2){
-        goNext = false;
-         // alert('One or more fields cannot be empty');
-      } else {
+      // if (this.state.message.length < 2){
+      //   goNext = false;
+      //    // alert('One or more fields cannot be empty');
+      // } else {
 
         
-        // Ensure animated field and constant have same difference of two
-        if((this.state.message.length - this.state.valueArray.length) != 2){
-          goNext = false
-        } else {
+      //   // Ensure animated field and constant have same difference of two
+      //   if((this.state.message.length - this.state.valueArray.length) != 2){
+      //     goNext = false
+      //   } else {
 
-            for (var key in this.state.message) {
-            var obj = this.state.message[key];
+      //       for (var key in this.state.message) {
+      //       var obj = this.state.message[key];
 
-            if (obj == ""){
-              // alert('One or more fields cannot be empty');
-              goNext = false;
-            }
-        }
+      //       if (obj == ""){
+      //         // alert('One or more fields cannot be empty');
+      //         goNext = false;
+      //       }
+      //   }
 
-        }
+      //   }
         
 
-      }
+      // }
+
+
+  
       
 
         if (goNext){
@@ -363,9 +371,20 @@ export default class AddParticipants extends Component
             }); 
         });              
     }
+
+    handleSelectItem = (item) => {
+        const {onDropdownClose} = this.props;
+        onDropdownClose();
+        // Handle Item
+        console.log("getting item ",item);
+      }
  
     render()
     {
+       const autocompletes = [...Array(2).keys()];
+
+      const {scrollToInput, onDropdownClose, onDropdownShow} = this.props;
+      const items = this.state.items;
         const animationValue = this.animatedValue.interpolate(
         {
             inputRange: [ 0, 1 ],
@@ -380,15 +399,28 @@ export default class AddParticipants extends Component
                     <Animated.View key = { key } style = {[{ opacity: this.animatedValue, transform: [{ translateY: animationValue }] }]}>
                         
 
-                        <TextInput style = {styles.input}
-                       underlineColorAndroid = "transparent"
-                       placeholder = "Enter Email"
-                       placeholderTextColor = "#9a73ef"
-                       autoCapitalize = "none"
-                       onChangeText = {(value) => this.addMessage(value,key+2)}
+                         <SafeAreaView>
+                          <Autocomplete
+                            key={shortid.generate()}
+                            style={styles.input}
+                            scrollToInput={ev => scrollToInput(ev)}
+                            handleSelectItem={(item) => this.handleSelectItem(item)}
+                            onDropdownClose={() => onDropdownClose()}
+                            onDropdownShow={() => onDropdownShow()}
+                            renderIcon={() => (
+                              <Icon name="ios-contact" size={20} color="#c7c6c1" style={styles.plus} />
+                            )}
+                            data = {this.state.items}
+                            
+                            minimumCharactersCount={1}
+                            highlightText
+                            valueExtractor={item => item}
+                            rightContent
+                            rightTextExtractor={item => item}
+                            noDataText = "No Data yet"
+                          />
                        
-                       defaultValue=" "
-                       />
+                      </SafeAreaView>
                     </Animated.View>
                 );
             }
@@ -396,14 +428,28 @@ export default class AddParticipants extends Component
             {
                 return(
                     <View key = { key } >
-                        <TextInput style = {styles.input}
-                       underlineColorAndroid = "transparent"
-                       placeholder = "Enter Email"
-                       placeholderTextColor = "#9a73ef"
-                       autoCapitalize = "none"
-                       onChangeText = {(value) => this.addMessage(value,key+2)}
-                       defaultValue=" "
-                       />
+                         <SafeAreaView>
+                          <Autocomplete
+                            key={shortid.generate()}
+                            style={styles.input}
+                            scrollToInput={ev => scrollToInput(ev)}
+                            handleSelectItem={(item) => this.handleSelectItem(item)}
+                            onDropdownClose={() => onDropdownClose()}
+                            onDropdownShow={() => onDropdownShow()}
+                            renderIcon={() => (
+                              <Icon name="ios-contact" size={20} color="#c7c6c1" style={styles.plus} />
+                            )}
+                            data = {this.state.items}
+                            
+                            minimumCharactersCount={1}
+                            highlightText
+                            valueExtractor={item => item}
+                            rightContent
+                            rightTextExtractor={item => item}
+                            noDataText = "No Data yet"
+                          />
+                       
+                      </SafeAreaView>
                     </View>
                 );
             }
@@ -414,48 +460,40 @@ export default class AddParticipants extends Component
                 <ScrollView>
 
                     <View style = {{ flex: 1, padding: 4 }}>
+
+
+
+                    <SafeAreaView>
+                        {autocompletes.map(() => (
+                          <Autocomplete
+                            key={shortid.generate()}
+                            style={styles.input}
+                            scrollToInput={ev => scrollToInput(ev)}
+                            handleSelectItem={(item) => this.handleSelectItem(item)}
+                            onDropdownClose={() => onDropdownClose()}
+                            onDropdownShow={() => onDropdownShow()}
+                            renderIcon={() => (
+                              <Icon name="ios-contact" size={20} color="#c7c6c1" style={styles.plus} />
+                            )}
+                            data = {this.state.items}
+                            
+                            minimumCharactersCount={1}
+                            highlightText
+                            valueExtractor={item => item}
+                            rightContent
+                            rightTextExtractor={item => item}
+                            noDataText = "No Data yet"
+                          />
+                        ))}
+                      </SafeAreaView>
+
+                      {
+                        newArray
+                    }
                       
 
 
-                    <SearchableDropdown
-                      onTextChange={text => console.log(text)}
-                      onItemSelect={item => JSON.stringify(item)}
-                      containerStyle={{ padding: 5 }}
-                      textInputStyle={{
-                        padding: 12,
-                        borderWidth: 1,
-                        borderColor: '#ccc',
-                        borderRadius: 5,
-                      }}
-                      itemStyle={{
-                        padding: 10,
-                        marginTop: 2,
-                        backgroundColor: '#ddd',
-                        borderColor: '#bbb',
-                        borderWidth: 1,
-                        borderRadius: 5,
-                      }}
-                      itemTextStyle={{ color: '#222' }}
-                      itemsContainerStyle={{ maxHeight: 140 }}
-                      items={this.state.items}
-                      defaultIndex={2}
-                      placeholder="placeholder"
-                      resetValue={false}
-                      underlineColorAndroid="transparent"
-                    />
-
-                       <TextInput style = {styles.input}
-                       underlineColorAndroid = "transparent"
-                       placeholder = "Enter Email"
-                       placeholderTextColor = "#9a73ef"
-                       autoCapitalize = "none"
-                       onChangeText = {(value) => this.addMessage(value,1)}
-                       />
-
-
-                    {
-                        newArray
-                    }
+              
                     </View>
                 </ScrollView>
 
@@ -483,6 +521,12 @@ const styles = StyleSheet.create(
         justifyContent: 'center',
         paddingTop: (Platform.OS == 'ios') ? 20 : 0
     },
+    autocompletesContainer: {
+      paddingTop: 0,
+      zIndex: 1,
+      width: "100%",
+      paddingHorizontal: 8,
+    },    
     multiLine: {
       margin: 15,
       height: 40,
@@ -548,5 +592,12 @@ const styles = StyleSheet.create(
         resizeMode: 'contain',
         width: '100%',
         tintColor: 'white'
-    }
+    },
+    plus: {
+    position: "absolute",
+    left: 15,
+    top: 10,
+  }
 });
+
+export default withKeyboardAwareScrollView(AddParticipants);

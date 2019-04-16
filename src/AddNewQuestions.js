@@ -40,49 +40,49 @@ export default class AddNewQuestions extends Component
 
     nextButton = () => {
 
-      // this.props.navigation.navigate("NewParticipant")
-      var goNext = true;
+      this.props.navigation.navigate("NewParticipant")
+      // var goNext = true;
 
-        console.log("promptValue",this.state.promptValue);
-        console.log("message array",this.state.message.length);
-        console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
+      //   console.log("promptValue",this.state.promptValue);
+      //   console.log("message array",this.state.message.length);
+      //   console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
 
-      if(this.state.promptValue == null || this.state.promptValue == "" ){
-        goNext = false;
-      } else if (this.state.message.length < 2){
-        goNext = false;
-         // alert('One or more fields cannot be empty');
-      } else {
+      // if(this.state.promptValue == null || this.state.promptValue == "" ){
+      //   goNext = false;
+      // } else if (this.state.message.length < 2){
+      //   goNext = false;
+      //    // alert('One or more fields cannot be empty');
+      // } else {
 
-        // console.log("value array",this.state.valueArray.length);
-        // console.log("message array",this.state.message.length);
-        // console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
+      //   // console.log("value array",this.state.valueArray.length);
+      //   // console.log("message array",this.state.message.length);
+      //   // console.log("the difference in array is",this.state.message.length - this.state.valueArray.length);
 
-        if((this.state.message.length - this.state.valueArray.length) != 2){ // ensure that the message length and value array are constant
-          goNext = false
-        } else {
+      //   if((this.state.message.length - this.state.valueArray.length) != 2){ // ensure that the message length and value array are constant
+      //     goNext = false
+      //   } else {
 
-            for (var key in this.state.message) {
-            var obj = this.state.message[key];
+      //       for (var key in this.state.message) {
+      //       var obj = this.state.message[key];
 
-            if (obj == ""){
-              // alert('One or more fields cannot be empty');
-              goNext = false;
-            }
-        }
+      //       if (obj == ""){
+      //         // alert('One or more fields cannot be empty');
+      //         goNext = false;
+      //       }
+      //   }
 
-        }
+      //   }
         
 
-      }
+      // }
       
 
-        if (goNext){
-           this.props.navigation.navigate("NewParticipant")
-           // console.log("goNext");
-        } else {
-          alert('One or more fields cannot be empty');
-        }
+      //   if (goNext){
+      //      this.props.navigation.navigate("NewParticipant")
+      //      // console.log("goNext");
+      //   } else {
+      //     alert('One or more fields cannot be empty');
+      //   }
     }
 
      addMessage = (text,index) => {
